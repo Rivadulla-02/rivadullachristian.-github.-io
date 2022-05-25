@@ -10,7 +10,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("#roar");
+                this.audio = document.querySelector("#hello");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -64,7 +64,7 @@ qp
     <a-scene renderer="colorManagement: true">
        <a-assets>
         <a-asset-item id="cuphead" response-type="arraybuffer" src="./cuphead.glb"></a-asset-item>
-        <audio id="roar" src="./assets/roar.wav"></audio>
+        <audio id="hello" src="./assets/hello.wav"></audio>
       </a-assets>
       <a-entity event-listener id="cuphead-model"  
         gltf-model="#cuphead" 
@@ -73,7 +73,7 @@ qp
         rotation="0 0 0" 
       >
       </a-entity>
-      <a-sound src="#roar" autoplay="false"></a-sound>
+      <a-sound src="#hello" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-scene>
