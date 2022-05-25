@@ -64,10 +64,10 @@
 
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
-       <a-asset>
+       <a-assets>
         <a-asset-item id="cuphead" response-type="arraybuffer" src="./cuphead.glb"></a-asset-item>
-        <audio id="hello" src="./asset/hello.wav"></audio>
-      </a-asset>
+        <audio id="hello" src="./assets/hello.wav"></audio>
+      </a-assets>
       <a-entity event-listener id="cuphead-model"  
         gltf-model="#cuphead" 
         scale=".5 .5 .5" 
