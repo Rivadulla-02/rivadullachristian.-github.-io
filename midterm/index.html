@@ -15,7 +15,8 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let cuphead = document.querySelector('#cuphead-model')
-		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    cuphead.setAttribute("animation-mixer", "clip: Cuphead_anim_22; loop: repeat; timeScale: 3.5"
+                 )
                     this.audio.play();
 			
                   console.log(e)
@@ -38,7 +39,8 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let cuphead = document.querySelector('#cuphead-model')
-		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    cuphead.setAttribute("animation-mixer", "clip: Cuphead_anim_22; loop: repeat; timeScale: 3.5"
+                 )
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -59,7 +61,7 @@
     };
 </script>
   </head>
-qp
+
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
        <a-asset>
