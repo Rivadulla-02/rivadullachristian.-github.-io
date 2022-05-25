@@ -62,14 +62,14 @@
 qp
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
-       <a-assets>
+       <a-asset>
         <a-asset-item id="cuphead" response-type="arraybuffer" src="./cuphead.glb"></a-asset-item>
-        <audio id="hello" src="./assets/hello.wav"></audio>
-      </a-assets>
+        <audio id="hello" src="./asset/hello.wav"></audio>
+      </a-asset>
       <a-entity event-listener id="cuphead-model"  
         gltf-model="#cuphead" 
         scale=".5 .5 .5" 
-        position = "0 0 -5" 
+        position = "0 0 0" 
         rotation="0 0 0" 
       >
       </a-entity>
