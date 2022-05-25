@@ -14,7 +14,7 @@
 
                 this.el.addEventListener('click', function (e) {
 		
-                    let dragon = document.querySelector('#dragon-model')
+                    let cuphead = document.querySelector('#cuphead-model')
 		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			
@@ -37,7 +37,7 @@
                 }.bind(this));
                 this.el.addEventListener('touchstart', function (e) {
 		
-                    let dragon = document.querySelector('#dragon-model')
+                    let cuphead = document.querySelector('#cuphead-model')
 		    dragon.setAttribute('animation-mixer', "clip: Scene; loop: once;");
                     this.audio.play();
 			console.log(e)
@@ -50,8 +50,8 @@
 		
                 this.el.addEventListener('animation-finished', function (e) {
 			 console.log(e)
-                    let dragon = document.querySelector('#dragon-model')
-		    dragon.removeAttribute('animation-mixer');
+                    let cuphead = document.querySelector('#cuphead-model')
+		    cuphead.removeAttribute('animation-mixer');
                 }.bind(this));
 		
             }
@@ -59,15 +59,15 @@
     };
 </script>
   </head>
-
+qp
   <body style="margin: 0; overflow: hidden;">
     <a-scene renderer="colorManagement: true">
        <a-assets>
-        <a-asset-item id="dragon" response-type="arraybuffer" src="./dragon.glb"></a-asset-item>
+        <a-asset-item id="cuphead" response-type="arraybuffer" src="./dragon.glb"></a-asset-item>
         <audio id="roar" src="./assets/roar.wav"></audio>
       </a-assets>
-      <a-entity event-listener id="dragon-model"  
-        gltf-model="#dragon" 
+      <a-entity event-listener id="cuphead-model"  
+        gltf-model="#cuphead" 
         scale=".5 .5 .5" 
         position = "0 0 -5" 
         rotation="0 0 0" 
